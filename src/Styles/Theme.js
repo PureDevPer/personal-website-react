@@ -1,3 +1,6 @@
 export default {
-	bgColor: '#FAFAFA'
+	bgColor: '#FAFAFA',
+	lightGreyColor: '#c7c7c7',
+	darkGreyColor: '#999',
+	lightRedColor: '#ff7675'
 };
