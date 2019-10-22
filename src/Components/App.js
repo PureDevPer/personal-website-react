@@ -3,6 +3,7 @@ import GlobalStyles from '../Styles/GlobalStyles';
 import Theme from '../Styles/Theme';
 import { ThemeProvider } from 'styled-components';
 import Footer from './Footer';
+import Landing from './Landing';
 
 class App extends Component {
 	render() {
@@ -10,7 +11,7 @@ class App extends Component {
 			<ThemeProvider theme={Theme}>
 				<>
 					<GlobalStyles />
-					<h1>Hello</h1>
+					<Landing />
 					<Footer />
 				</>
 			</ThemeProvider>
