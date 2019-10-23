@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes, css } from 'styled-components';
+import Typing, { Backspace } from 'react-typing-animation';
 
 const LandingAnimation = keyframes`
     50% {
@@ -64,7 +65,10 @@ export default () => (
 	<LandingPage>
 		<PageContent>
 			<PageHeader>Wooseok Kim</PageHeader>
-			<PageText>Software Engineer</PageText>
+			<Typing startDelay={500} loop>
+				<PageText>Software Engineer</PageText>
+				<Backspace count={18} delay={2000} />
+			</Typing>
 		</PageContent>
 	</LandingPage>
 );
