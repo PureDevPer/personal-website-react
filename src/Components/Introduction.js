@@ -12,10 +12,13 @@ const Container = styled.div`
 const ContainerWrapper = styled.div`
 	width: 100%;
 	max-width: ${props => props.theme.maxWidth};
+	padding: 0px 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: justify;
 	flex-direction: column;
+	letter-spacing: 2px;
 `;
 
 const Intro = styled.span`
@@ -30,7 +33,7 @@ const Paragraph = styled.span`
 	}
 
 	&:last-child {
-		margin-bottom: 70px;
+		margin-bottom: 80px;
 	}
 `;
 
@@ -49,9 +52,9 @@ export default () => {
 				</Paragraph>
 
 				<Paragraph>
-					Since I was a senior in college, I like mobile wireless networks. So,
-					I read new telecommunication technologies such as next generation
-					wireless networks.
+					Since I was a senior in college, I like mobile wireless networks as
+					well. So, I read new telecommunication technologies such as next
+					generation wireless networks.
 				</Paragraph>
 
 				<Paragraph>
