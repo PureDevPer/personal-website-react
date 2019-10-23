@@ -13,7 +13,7 @@ const LandingAnimation = keyframes`
 
 const LandingPage = styled.div`
 	width: 100%;
-	height: 100vh;
+	height: 95vh;
 	background: #000;
 	position: relative;
 	overflow: hidden;

@@ -8,12 +8,12 @@ const Header = styled.header`
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: ${props => props.theme.blackColor};
+	background-color: #1f2329;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 25px 0px;
-	z-index: 9;
+	z-index: 8;
 `;
 
 const HeaderWrapper = styled.div`
@@ -27,7 +27,10 @@ const HeaderLink = styled(Link)`
 	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 22px;
+	&:hover {
+		color: ${props => props.theme.lightRedColor};
+	}
 `;
 
 export default () => {
