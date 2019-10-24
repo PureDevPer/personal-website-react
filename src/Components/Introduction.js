@@ -28,6 +28,7 @@ const Intro = styled.span`
 `;
 
 const Paragraph = styled.span`
+	line-height: 1.5em;
 	&:not(:last-child) {
 		margin-bottom: 20px;
 	}
@@ -46,28 +47,29 @@ export default () => {
 				</Intro>
 
 				<Paragraph>
-					I'm interested in all aspects of the software development. My passion
-					lies recently in the web application development including both the
+					I'm interested in all aspects of software development. Recently, my
+					passion lies in the web application development including both the
 					front end and the back end. I fell in love with the modern JavaScript.
 				</Paragraph>
 
 				<Paragraph>
-					Since I was a senior in college, I like mobile wireless networks as
-					well. So, I read new telecommunication technologies such as next
-					generation wireless networks.
+					Since I was a senior in college, I've liked mobile wireless networks
+					as well. Therefore, I have read new telecommunication technologies
+					such as next generation wireless networks.
 				</Paragraph>
 
 				<Paragraph>
-					Outside of computer world, I like car detailing as a car enthusiast. I
-					research how to make the car cleaner. I also like traveling all over
-					the world. One of my dreams is to visit all national parks in the
-					United States.
+					Outside the realm of computers, I enjoy car detailing as a car
+					enthusiast. I research how to make the car cleaner. I also like
+					traveling all over the world. One of my dreams is to visit all the
+					national parks in the United States.
 				</Paragraph>
 
 				<Paragraph>
 					Previously, I taught code to undergraduate students in college, worked
-					as a software test engineer and developed web applications as a
-					software engineer intern. I also hold degrees in computer science.
+					as a software test engineer for LG and developed web applications as a
+					software engineer intern. I also hold a Bachelor's and Master's Degree
+					in computer science.
 				</Paragraph>
 			</ContainerWrapper>
 		</Container>

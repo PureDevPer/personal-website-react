@@ -18,20 +18,22 @@ const Icons = styled.ul`
 const Icon = styled.li`
 	font-size: 18px;
 	margin-bottom: 30px;
+	transition: all 0.4s ease-in-out;
+
 	&:not(:last-child) {
 		margin-right: 20px;
 	}
 	&:hover {
-		transition: all 0.4s ease-in-out;
 		transform: scale(1.2) translateY(-5px);
 	}
 `;
 
 const Link = styled.a`
 	color: ${props => props.theme.darkGreyColor};
+	transition: all 0.4s ease-in-out;
+
 	&:hover {
 		color: ${props => props.theme.lightRedColor};
-		transition: all 0.4s ease-in-out;
 		transform: scale(1.2) translateY(-5px);
 	}
 `;
