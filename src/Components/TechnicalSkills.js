@@ -7,7 +7,7 @@ const Skills = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 `;
 
 const Intro = styled.span`
@@ -26,7 +26,7 @@ const Icons = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 80%;
 	max-width: ${props => props.theme.maxWidth};
 `;
 
