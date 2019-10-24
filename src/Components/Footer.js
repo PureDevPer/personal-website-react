@@ -9,6 +9,7 @@ const Footer = styled.footer`
 	flex-direction: column;
 	background-color: #e9ebee;
 	padding: 70px;
+	width: 100%;
 `;
 
 const Icons = styled.ul`
