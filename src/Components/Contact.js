@@ -57,6 +57,7 @@ const ItemInput = styled.input`
 	max-width: ${props => props.theme.maxWidth};
 	border-radius: 4px;
 	border: 1px solid rgb(204, 204, 204);
+	font-size: 16px;
 	transition: border 0.3s ease-in-out;
 
 	&:focus {
@@ -71,6 +72,7 @@ const ItemTextArea = styled.textarea`
 	width: 80%;
 	max-width: ${props => props.theme.maxWidth};
 	height: 200px;
+	font-size: 16px;
 	border-radius: 4px;
 	border: 1px solid rgb(204, 204, 204);
 	transition: all 0.5s ease-in-out;
@@ -94,6 +96,7 @@ const ItemButton = styled.button`
 	border: 1px solid rgb(204, 204, 204);
 	text-transform: uppercase;
 	transition: all 0.4s ease-in-out;
+	cursor: pointer;
 
 	&:hover {
 		background-color: ${props => props.theme.lightRedColor};
