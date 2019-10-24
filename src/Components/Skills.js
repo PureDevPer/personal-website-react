@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import TechnicalSkills from './TechnicalSkills';
-import { STACKS, FRONT_END } from './SkillDetail';
+import { STACKS, FRONT_END, BACK_END, OTHERS } from './SkillDetail';
 
 const Container = styled.div`
 	display: flex;
@@ -35,6 +35,8 @@ export default () => {
 			<ContainerWrapper>
 				<Intro>Skills</Intro>
 				<TechnicalSkills skillInfo={FRONT_END} stack={STACKS[0]} />
+				<TechnicalSkills skillInfo={BACK_END} stack={STACKS[1]} />
+				<TechnicalSkills skillInfo={OTHERS} stack={STACKS[2]} />
 			</ContainerWrapper>
 		</Container>
 	);
