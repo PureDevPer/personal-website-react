@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const Header = styled.header`
 	width: 100%;
@@ -12,15 +12,23 @@ const Header = styled.header`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 25px 0px;
+	height: 60px;
 	z-index: 8;
 `;
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.ul`
 	width: 100%;
 	max-width: ${props => props.theme.maxWidth};
+	height: 100%;
 	display: flex;
 	justify-content: space-evenly;
+`;
+
+const HeaderItem = styled.li`
+	padding-top: 20px;
+	border-bottom: 4px solid
+		${props => (props.current ? props.theme.lightRedColor : 'transparent')};
+	transition: border-bottom 0.4s ease-in-out;
 `;
 
 const HeaderLink = styled(Link)`
@@ -28,19 +36,24 @@ const HeaderLink = styled(Link)`
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 22px;
+
 	&:hover {
 		color: ${props => props.theme.lightRedColor};
 	}
 `;
 
-export default () => {
-	return (
-		<Header>
-			<HeaderWrapper>
+export default withRouter(({ location: { pathname } }) => (
+	<Header>
+		<HeaderWrapper>
+			<HeaderItem current={pathname === '/'}>
 				<HeaderLink to="/">Home</HeaderLink>
+			</HeaderItem>
+			<HeaderItem current={pathname === '/projects'}>
 				<HeaderLink to="/projects">Projects</HeaderLink>
+			</HeaderItem>
+			<HeaderItem current={pathname === '/contact'}>
 				<HeaderLink to="/contact">Contact</HeaderLink>
-			</HeaderWrapper>
-		</Header>
-	);
-};
+			</HeaderItem>
+		</HeaderWrapper>
+	</Header>
+));
