@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Modal from './Modal';
+import Design from './Projects/Design';
 
 const Container = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -194,10 +196,20 @@ class Projects extends Component {
 						</ProjectHeader>
 						<>
 							<>
-								I developed an web application which offers movie information and TV show information using 
-								<a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer"> The MOVIE DB</a>. 
-								Movie page shows Now Playing, Upcoming Movies, and Popular movies. TV shows offers Airing Today, Top Rated Shows, and Popular shows. 
-								Each movie or each TV show has their own detail page, which offers program information.
+								I developed an web application which offers movie information
+								and TV show information using
+								<a
+									href="https://www.themoviedb.org/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									{' '}
+									The MOVIE DB
+								</a>
+								. Movie page shows Now Playing, Upcoming Movies, and Popular
+								movies. TV shows offers Airing Today, Top Rated Shows, and
+								Popular shows. Each movie or each TV show has their own detail
+								page, which offers program information.
 							</>
 							<>react, react-router-dom, styled-component, axios</>
 						</>
@@ -225,7 +237,10 @@ class Projects extends Component {
 						</ProjectHeader>
 						<>
 							<>
-								I developed a weather application using React Native. When you allow your location on your phone, we can check your current weather information, your location, minimum temperature, and maximum temperature. 
+								I developed a weather application using React Native. When you
+								allow your location on your phone, we can check your current
+								weather information, your location, minimum temperature, and
+								maximum temperature.
 							</>
 							<>expo, react, react native</>
 						</>
@@ -253,14 +268,18 @@ class Projects extends Component {
 						</ProjectHeader>
 						<>
 							<>
-								I developed Momentum replica, Google Chrome app, which allows users to input to-do list with locaiton. A basic gelocation setting with weather information is built by allowing users to convert temperature. All data written by users are saved on local storage.
+								I developed Momentum replica, Google Chrome app, which allows
+								users to input to-do list with locaiton. A basic gelocation
+								setting with weather information is built by allowing users to
+								convert temperature. All data written by users are saved on
+								local storage.
 							</>
 							<>HTML, CSS, JavaScript</>
 						</>
 					</ProjectContainer>
 				</Items>
 				<Items>
-					<Image src="https://puredevper.s3.amazonaws.com/Kakao.png" />
+					<Image src="https://puredevper.s3.amazonaws.com/KaTalk.png" />
 					<ProjectContainer>
 						<ProjectHeader>
 							<>Kakao</>
@@ -281,12 +300,16 @@ class Projects extends Component {
 						</ProjectHeader>
 						<>
 							<>
-								I created UI parts of an instant messaing application. A responsive web application is implemented to fit mobile screen. Landing pages, built by animation, are created to change 2 different versions of Kakao and to make user's screen smaller.
+								I created UI parts of an instant messaing application. A
+								responsive web application is implemented to fit mobile screen.
+								Landing pages, built by animation, are created to change 2
+								different versions of Kakao and to make user's screen smaller.
 							</>
 							<>HTML5, CSS3</>
 						</>
 					</ProjectContainer>
 				</Items>
+				<Design />
 			</Container>
 		);
 	}
