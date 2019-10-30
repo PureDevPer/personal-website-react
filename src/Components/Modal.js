@@ -65,7 +65,7 @@ const Button = styled.button`
 
 class Modal extends Component {
 	render() {
-		const { isOpen, close } = this.props;
+		const { isOpen, close, youtubeID } = this.props;
 		const opts = {
 			height: '315',
 			width: '560',
@@ -81,7 +81,7 @@ class Modal extends Component {
 						<ModalOverLay />
 						<Container>
 							<Items>
-								<Item videoId="QcQEY0r8pIQ" opts={opts} />
+								<Item videoId={youtubeID} opts={opts} />
 							</Items>
 							<ButtonWrap>
 								<Button onClick={close}> Close </Button>
@@ -95,6 +95,7 @@ class Modal extends Component {
 }
 
 Modal.propTypes = {
+	youtubeID: PropTypes.string.isRequired,
 	isOpen: PropTypes.bool,
 	close: PropTypes.func
 };

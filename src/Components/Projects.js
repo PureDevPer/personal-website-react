@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Modal from './Modal';
 import Design from './Projects/Design';
+import FullStack from './Projects/FullStack';
 
 const Container = styled.div`
 	display: flex;
@@ -178,108 +179,7 @@ class Projects extends Component {
 		return (
 			<Container>
 				<Intro>Projects</Intro>
-
-				<SubIntro>Full Stack Projects</SubIntro>
-				<Items>
-					<ImageContainer>
-						<Image src={require('../assets/MyTube.png')} />
-					</ImageContainer>
-					<ProjectContainer>
-						<ProjectHeader>
-							<Title>MystaGram</Title>
-							<ProjectButtons>
-								<ProjectButton onClick={this.openModal}>Demo</ProjectButton>
-								<Modal
-									isOpen={this.state.isModalOpen}
-									close={this.closeModal}
-								/>
-								<ProjectLink
-									href="https://github.com/PureDevPer/MystaGram"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Code
-								</ProjectLink>
-							</ProjectButtons>
-						</ProjectHeader>
-						<Descriptions>
-							<Description>
-								I developed a full stack, scalable, and improved Instagram
-								replica that uploads and shares photos between users. Both web
-								application and mobile app (iOS/Android) are developed by React
-								and React Native. When user uploads data on mobile app, both web
-								application and mobile app synchronize all data simutaneoulsy.
-							</Description>
-							<Description>
-								Login system using one-time password (OTP) are improved. In
-								other words, new password is sent to user email for each login.
-								I developed sign-up using Google and Facebook account (Oauth2),
-								photo upload from phone storage, Post, Like and Comment.
-							</Description>
-							<Technologies>
-								<TechnologyFrontEnd>React</TechnologyFrontEnd>
-								<TechnologyFrontEnd>React Native</TechnologyFrontEnd>
-								<TechnologyFrontEnd>React Hooks</TechnologyFrontEnd>
-								<TechnologyFrontEnd>Apollo</TechnologyFrontEnd>
-							</Technologies>
-							<Technologies>
-								<TechnologyBackEnd>Node.js</TechnologyBackEnd>
-								<TechnologyBackEnd>Express</TechnologyBackEnd>
-								<TechnologyBackEnd>Prisma</TechnologyBackEnd>
-								<TechnologyBackEnd>GraphQL</TechnologyBackEnd>
-								<TechnologyBackEnd>Passport</TechnologyBackEnd>
-								<TechnologyBackEnd>Babel</TechnologyBackEnd>
-								<TechnologyBackEnd>AWS S3</TechnologyBackEnd>
-								<TechnologyBackEnd>Heroku</TechnologyBackEnd>
-								<TechnologyBackEnd>Netlify</TechnologyBackEnd>
-							</Technologies>
-						</Descriptions>
-					</ProjectContainer>
-				</Items>
-
-				<Items>
-					<Image src={require('../assets/MyTube.png')} />
-					<ProjectContainer>
-						<ProjectHeader>
-							<>MyTube</>
-							<ProjectButtons>
-								<button onClick={this.openModal}>Demo</button>
-								<Modal
-									isOpen={this.state.isModalOpen}
-									close={this.closeModal}
-								/>
-								<a
-									href="https://github.com/PureDevPer/MyTube"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Code
-								</a>
-							</ProjectButtons>
-						</ProjectHeader>
-						<>
-							<>
-								I created a full stack and scalable YouTube replica, which
-								allows people to enjoy wathching and uploading videos. The
-								project followed the MVC pattern. All pages are divided into
-								different routers which render templates and have controllers.
-								User information controllers and video information controllers
-								render a page from Database, MongoDB.
-							</>
-							<>
-								I implemented video upload to AWS S3 server, video record in
-								real time, coments, video search, and custom video player. A
-								full authentication system is built for users in order to
-								provide more accountability.
-							</>
-							<>Front-End: JavaScript (ES6), Pug, SaSS, Webpack</>
-							<>
-								Back-End: JavaScript (ES6), Express, Node.js, MongoDB, Mongo
-								Atlas, Mongoose, Passport, Babel, AWS S3, Heroku
-							</>
-						</>
-					</ProjectContainer>
-				</Items>
+				<FullStack />
 
 				<SubIntro>Web Projects</SubIntro>
 				<Items>
