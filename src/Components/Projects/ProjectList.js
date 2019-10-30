@@ -83,10 +83,10 @@ export const WEB_BASED_PROJECTS = [
 		deployedLink: '',
 		isGithubLink: true,
 		githubLink: `${GITHUB_LINK}MovieWorld`,
-		description1: `I developed an web application which offers movie information
-        and TV show information using The MOVIE DB. Movie page shows Now Playing, Upcoming Movies, and Popular
-        movies. TV shows offers Airing Today, Top Rated Shows, and
-        Popular shows. Each movie or each TV show has their own detail
+		description1: `I developed a web application which offers Movie
+        and TV show information using The MOVIE DB. The Movie page shows Now Playing, Upcoming Movies, and Popular
+        movies. The TV show page offers Airing Today, Top Rated Shows, and
+        Popular shows. Each Movie and each TV show has their own detail
         page, which offers program information.`,
 		isDescription2: false,
 		description2: ``,
