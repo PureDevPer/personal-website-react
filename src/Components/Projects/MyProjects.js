@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { FULLSTACKPROJECTS } from './ProjectList';
+import PropTypes from 'prop-types';
 import Modal from '../Modal';
 
 const SubIntro = styled.span`
@@ -81,6 +81,25 @@ const ProjectButton = styled.button`
 	}
 `;
 
+const ProjectDeployLink = styled.a`
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 5px;
+	color: ${props => props.theme.darkGreyColor};
+	border: 2px solid ${props => props.theme.darkGreyColor};
+	border-radius: 5px;
+	margin-right: 5px;
+	text-transform: uppercase;
+	transition: all 0.4s ease-in;
+
+	&:hover {
+		color: white;
+		background-color: ${props => props.theme.lightRedColor};
+		border-color: ${props => props.theme.lightRedColor};
+	}
+`;
+
 const ProjectLink = styled.a`
 	outline: none;
 	font-size: 16px;
@@ -144,7 +163,7 @@ const TechnologyBackEnd = styled.span`
 	}
 `;
 
-class FullStack extends Component {
+class MyProjects extends Component {
 	state = {
 		isModalOpen: false
 	};
@@ -158,10 +177,11 @@ class FullStack extends Component {
 	};
 
 	render() {
+		const { section, projectInfo } = this.props;
 		return (
 			<>
-				<SubIntro>Full Stack Projects</SubIntro>
-				{FULLSTACKPROJECTS.map((project, index) => (
+				<SubIntro>{section}</SubIntro>
+				{projectInfo.map((project, index) => (
 					<Items key={index}>
 						<ImageContainer>
 							<Image src={project.imageLink} />
@@ -170,25 +190,44 @@ class FullStack extends Component {
 							<ProjectHeader>
 								<Title>{project.title}</Title>
 								<ProjectButtons>
-									<ProjectButton onClick={this.openModal}>Demo</ProjectButton>
-									<Modal
-										youtubeID={project.youtube}
-										isOpen={this.state.isModalOpen}
-										close={this.closeModal}
-									/>
-									<ProjectLink
-										href={project.githubLink}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										Code
-									</ProjectLink>
+									{project.isYoutube && (
+										<>
+											<ProjectButton onClick={this.openModal}>
+												Demo
+											</ProjectButton>
+											<Modal
+												youtubeID={project.youtube}
+												isOpen={this.state.isModalOpen}
+												close={this.closeModal}
+											/>
+										</>
+									)}
+									{project.isDeployed && (
+										<ProjectDeployLink
+											href={project.deployedLink}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Demo
+										</ProjectDeployLink>
+									)}
+									{project.isGithubLink && (
+										<ProjectLink
+											href={project.githubLink}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Code
+										</ProjectLink>
+									)}
 								</ProjectButtons>
 							</ProjectHeader>
 
 							<Descriptions>
 								<Description>{project.description1}</Description>
-								<Description>{project.description2}</Description>
+								{project.isDescription2 && (
+									<Description>{project.description2}</Description>
+								)}
 								<Technologies>
 									{project.frontend.map((language, index) => (
 										<TechnologyFrontEnd key={index}>
@@ -197,11 +236,12 @@ class FullStack extends Component {
 									))}
 								</Technologies>
 								<Technologies>
-									{project.backend.map((language, index) => (
-										<TechnologyBackEnd key={index}>
-											{language}
-										</TechnologyBackEnd>
-									))}
+									{project.isBackend &&
+										project.backend.map((language, index) => (
+											<TechnologyBackEnd key={index}>
+												{language}
+											</TechnologyBackEnd>
+										))}
 								</Technologies>
 							</Descriptions>
 						</ProjectContainer>
@@ -212,4 +252,26 @@ class FullStack extends Component {
 	}
 }
 
-export default FullStack;
+MyProjects.propTypes = {
+	section: PropTypes.string.isRequired,
+	projectInfo: PropTypes.arrayOf(
+		PropTypes.shape({
+			imageLink: PropTypes.string.isRequired,
+			title: PropTypes.string.isRequired,
+			isYoutube: PropTypes.bool.isRequired,
+			youtube: PropTypes.string,
+			isDeployed: PropTypes.bool.isRequired,
+			deployedLink: PropTypes.string,
+			isGithubLink: PropTypes.bool.isRequired,
+			githubLink: PropTypes.string,
+			description1: PropTypes.string.isRequired,
+			isDescription2: PropTypes.bool.isRequired,
+			description2: PropTypes.string,
+			frontend: PropTypes.arrayOf(PropTypes.string).isRequired,
+			isBackend: PropTypes.bool.isRequired,
+			backend: PropTypes.arrayOf(PropTypes.string)
+		})
+	).isRequired
+};
+
+export default MyProjects;
