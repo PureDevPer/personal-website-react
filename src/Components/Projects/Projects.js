@@ -1,12 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Design from './Projects/Design';
-import MyProjects from './Projects/MyProjects';
-import {
-	FULLSTACK_PROJECTS,
-	WEB_BASED_PROJECTS,
-	OTHERS
-} from './Projects/ProjectList';
+import Design from './Design';
+import MyProjects from './MyProjects';
+import { FULLSTACK_PROJECTS, WEB_BASED_PROJECTS, OTHERS } from './ProjectList';
 
 const Container = styled.div`
 	display: flex;
