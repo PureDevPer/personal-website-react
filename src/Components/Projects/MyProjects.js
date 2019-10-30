@@ -23,7 +23,7 @@ const Items = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	padding: 0px 10px;
+	padding: 0px 20px;
 `;
 
 const Image = styled.img`

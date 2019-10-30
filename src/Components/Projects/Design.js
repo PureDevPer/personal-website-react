@@ -16,11 +16,12 @@ const SubIntro = styled.span`
 const Items = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 40px;
 	width: 100%;
 	max-width: ${props => props.theme.maxWidth};
+	padding: 0px 10px;
 `;
 
 const Item = styled.div`
