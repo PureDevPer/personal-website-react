@@ -177,10 +177,10 @@ class MyProjects extends Component {
 	};
 
 	render() {
-		const { section, projectInfo } = this.props;
+		const { section, projectInfo, isSection } = this.props;
 		return (
 			<>
-				<SubIntro>{section}</SubIntro>
+				{isSection === 'true' && <SubIntro>{section}</SubIntro>}
 				{projectInfo.map((project, index) => (
 					<Items key={index}>
 						<ImageContainer>
@@ -253,7 +253,7 @@ class MyProjects extends Component {
 }
 
 MyProjects.propTypes = {
-	section: PropTypes.string.isRequired,
+	section: PropTypes.string,
 	projectInfo: PropTypes.arrayOf(
 		PropTypes.shape({
 			imageLink: PropTypes.string.isRequired,

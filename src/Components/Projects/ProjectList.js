@@ -2,26 +2,26 @@ const GITHUB_DESIGN = 'https://puredevper.github.io/SimpleWebProject/';
 const AMAZON_S3 = 'https://puredevper.s3.amazonaws.com/';
 const GITHUB_LINK = 'https://github.com/PureDevPer/';
 
-export const FULLSTACK_PROJECTS = [
+export const FULLSTACK_PROJECT_MYSTAGRAM = [
 	{
 		imageLink: `${AMAZON_S3}MystaGram.png`,
 		title: 'MystaGram',
 		isYoutube: true,
-		youtube: 'QcQEY0r8pIQ',
+		youtube: 'XpxQkVMxJ1A',
 		isDeployed: false,
 		deployedLink: '',
 		isGithubLink: true,
 		githubLink: `${GITHUB_LINK}MystaGram`,
 		description1: `I developed a full stack, scalable, and improved Instagram
-        replica that uploads and shares photos between users. Both web
-        application and mobile app (iOS/Android) are developed by React
-        and React Native. When user uploads data on mobile app, both web
-        application and mobile app synchronize all data simutaneoulsy.`,
+	replica that uploads and shares photos between users. Both web
+	application and mobile app (iOS/Android) are developed by React
+	and React Native. When user uploads data on mobile app, both web
+	application and mobile app synchronize all data simutaneoulsy.`,
 		isDescription2: true,
 		description2: `Login system using one-time password (OTP) are improved. In
-        other words, new password is sent to user email for each login.
-        I developed sign-up using Google and Facebook account (Oauth2),
-        photo upload from phone storage, Post, Like and Comment.`,
+	other words, new password is sent to user email for each login.
+	I developed sign-up using Google and Facebook account (Oauth2),
+	photo upload from phone storage, Post, Like and Comment.`,
 		frontend: ['React', 'React Native', 'React Hooks', 'Apollo'],
 		isBackend: true,
 		backend: [
@@ -35,7 +35,10 @@ export const FULLSTACK_PROJECTS = [
 			'Heroku',
 			'Netlify'
 		]
-	},
+	}
+];
+
+export const FULLSTACK_PROJECT_MYTUBE = [
 	{
 		imageLink: `${AMAZON_S3}MyTube.png`,
 		title: 'MyTube',

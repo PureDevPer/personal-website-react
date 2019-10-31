@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Design from './Design';
 import MyProjects from './MyProjects';
-import { FULLSTACK_PROJECTS, WEB_BASED_PROJECTS, OTHERS } from './ProjectList';
+import {
+	FULLSTACK_PROJECT_MYTUBE,
+	FULLSTACK_PROJECT_MYSTAGRAM,
+	WEB_BASED_PROJECTS,
+	OTHERS
+} from './ProjectList';
 
 const Container = styled.div`
 	display: flex;
@@ -27,11 +32,21 @@ const Projects = () => {
 			<Intro>Projects</Intro>
 			<MyProjects
 				section="Full Stack Projects"
-				projectInfo={FULLSTACK_PROJECTS}
+				isSection="true"
+				projectInfo={FULLSTACK_PROJECT_MYSTAGRAM}
 			/>
-			<MyProjects section="Web Projects" projectInfo={WEB_BASED_PROJECTS} />
+			<MyProjects
+				section="Full Stack Projects"
+				isSection="false"
+				projectInfo={FULLSTACK_PROJECT_MYTUBE}
+			/>
+			<MyProjects
+				section="Web Projects"
+				isSection="true"
+				projectInfo={WEB_BASED_PROJECTS}
+			/>
 			<Design />
-			<MyProjects section="Others" projectInfo={OTHERS} />
+			<MyProjects section="Others" isSection="true" projectInfo={OTHERS} />
 		</Container>
 	);
 };
