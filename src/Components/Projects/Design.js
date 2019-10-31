@@ -35,6 +35,11 @@ const Image = styled.img`
 	height: 200px;
 	border-radius: 10px;
 	box-shadow: 5px 10px 18px #888888;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.2) translateY(-5px);
+	}
 `;
 
 const Design = () => {
