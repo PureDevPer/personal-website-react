@@ -58,11 +58,12 @@ const ItemInput = styled.input`
 	border-radius: 4px;
 	border: 1px solid rgb(204, 204, 204);
 	font-size: 16px;
-	transition: border 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	&:focus {
 		outline: none;
 		border: 1px solid rgb(85, 85, 85);
+		box-shadow: 5px 10px 15px #888888;
 	}
 `;
 

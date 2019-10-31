@@ -4,7 +4,7 @@ const GITHUB_LINK = 'https://github.com/PureDevPer/';
 
 export const FULLSTACK_PROJECTS = [
 	{
-		imageLink: `${AMAZON_S3}MyTube.png`,
+		imageLink: `${AMAZON_S3}MystaGram.png`,
 		title: 'MystaGram',
 		isYoutube: true,
 		youtube: 'QcQEY0r8pIQ',
