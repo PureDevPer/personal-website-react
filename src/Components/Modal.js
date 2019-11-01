@@ -48,6 +48,7 @@ const Button = styled.button`
 	font-weight: 600;
 	font-size: 16px;
 	color: ${props => props.theme.darkGreyColor};
+	background-color: inherit;
 	border: 1px solid rgb(204, 204, 204);
 	text-transform: uppercase;
 	transition: all 0.4s ease-in-out;
