@@ -254,6 +254,7 @@ class MyProjects extends Component {
 
 MyProjects.propTypes = {
 	section: PropTypes.string,
+	isSection: PropTypes.bool.isRequired,
 	projectInfo: PropTypes.arrayOf(
 		PropTypes.shape({
 			imageLink: PropTypes.string.isRequired,
