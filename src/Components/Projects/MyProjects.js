@@ -67,6 +67,7 @@ const ProjectButton = styled.button`
 	font-weight: 600;
 	padding: 5px;
 	color: ${props => props.theme.darkGreyColor};
+	background-color: ${props => props.theme.bgColor};
 	border: 2px solid ${props => props.theme.darkGreyColor};
 	border-radius: 5px;
 	text-transform: uppercase;
