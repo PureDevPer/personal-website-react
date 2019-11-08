@@ -193,7 +193,7 @@ export const OTHERS = [
         accuracy for characters.`,
 		isDescription2: false,
 		description2: ``,
-		frontend: ['Python', 'Tensorflow'],
+		frontend: ['Python', 'Tensorflow', 'Numpy', 'Pandas', 'Matplotlib'],
 		isBackend: false,
 		backend: []
 	},
