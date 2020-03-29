@@ -87,12 +87,12 @@ export const FULLSTACK_PROJECT_GUESSMYDRAWING = [
     isGithubLink: true,
     githubLink: `${GITHUB_LINK}guessing_my_drawing`,
     description1: `I developed a full stack web application called Guess My Drawing. 
-		A leader user can draw something to describe a word. 
-		The other user guesses the word that a leader draws and can type an answer. 
-		Both users can chat each other. If the answer of the user is correct, the user gets 10 points.`,
+		User A can draw something to describe a word. 
+		User B then guesses the word that User A draws, and can type an answer. 
+		Both users can chat with each other. If the answer is correct, the User B gets 10 points.`,
     isDescription2: true,
-    description2: `The project is built by responsive web design. Socket.io is being used to draw something on canvas 
-		and to chat for users in real time. I implemented chat, canvas, notifications, and timer in real time.
+    description2: `The project is built by responsive web design. Socket.io is being used to draw on the canvas 
+		and to chat in real time. I implemented chat, canvas, notifications, and timer in real time.
 		LocalStorage is used instead of database.`,
     frontend: ["JavaScript", "Pug", "Gulp"],
     isBackend: true,
@@ -111,13 +111,13 @@ export const FULLSTACK_PROJECT_BEERWORLD = [
     isGithubLink: true,
     githubLink: `${GITHUB_LINK}BeerWorld`,
     description1: `I created a full stack Beer World application, using BreweryDB API, that has two different pages. 
-		A main page displays a list of beers and "Like" buttons. A "My Beers" page shows beers a user likes from a main page.
+		A main page displays a list of beers and "Like" buttons. A "My Beers" page shows beers a user likes from thr main page.
 		The project followed the MVC (Model, View, Controller) pattern and used RESTful API. 
 		Beer data are saved by database, MongoDB.`,
     isDescription2: true,
     description2: `The BreweryDB API doesn't have all the information. 
 		If there doesn't exist a beer image on the API, alternative beer image has been used.
-		When a user clicks a "Like" button, beer information saves on the MongoDB server. 
+		When a user clicks the "Like" button, beer information saves on the MongoDB server. 
 		CRUD (Create, Read, Update, Delete) features are implemented on BeerController.`,
     frontend: [
       "React",
