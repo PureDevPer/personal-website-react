@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Design from "./Design";
 import MyProjects from "./MyProjects";
 import {
-  FULLSTACK_PROJECT_MYTUBE,
   FULLSTACK_PROJECT_MYSTAGRAM,
+  FULLSTACK_PROJECT_MYTUBE,
   FULLSTACK_PROJECT_GUESSMYDRAWING,
   FULLSTACK_PROJECT_BEERWORLD,
   WEB_BASED_PROJECTS,
@@ -52,6 +52,7 @@ const Projects = () => {
         isSection="false"
         projectInfo={FULLSTACK_PROJECT_BEERWORLD}
       />
+
       <MyProjects
         section="Web Projects"
         isSection="true"
