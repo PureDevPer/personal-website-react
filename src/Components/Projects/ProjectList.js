@@ -111,7 +111,7 @@ export const FULLSTACK_PROJECT_BEERWORLD = [
     isGithubLink: true,
     githubLink: `${GITHUB_LINK}BeerWorld`,
     description1: `I created a full stack Beer World application, using BreweryDB API, that has two different pages. 
-		A main page displays a list of beers and "Like" buttons. A "My Beers" page shows beers a user likes from thr main page.
+		A main page displays a list of beers and "Like" buttons. A "My Beers" page shows beers a user likes from the main page.
 		The project followed the MVC (Model, View, Controller) pattern and used RESTful API. 
 		Beer data are saved by database, MongoDB.`,
     isDescription2: true,
