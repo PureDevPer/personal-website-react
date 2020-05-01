@@ -1,10 +1,10 @@
 # Portfolio
 
-<a href="https://wooseok.netlify.com" target="_blank">wooseok.netlify.com</a>
+<a href="https://wooseok.netlify.app" target="_blank">wooseok.netlify.app</a>
 
 My personal project portfolio developed by React
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2b2a92f6-3281-47c5-b2bb-252235f364f5/deploy-status)](https://app.netlify.com/sites/wooseok/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1d75f44-0aa4-4f6d-a05c-03b725401af3/deploy-status)](https://app.netlify.com/sites/wooseok/deploys)
 
 [![react](https://img.shields.io/badge/react-16.10.2-green.svg)](https://github.com/PureDevPer/personal-website-react)
 [![react_router_dom](https://img.shields.io/badge/react_router_dom-5.1.2-green.svg)](https://github.com/PureDevPer/personal-website-react)
