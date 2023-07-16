@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { INTRODUCTION } from "./constants/Introduction";
+import { INTRODUCTION, PARAGRAPH } from "./constants/Introduction";
 
 const Container = styled.div`
     display: flex;
@@ -44,11 +44,10 @@ export default () => {
     return (
         <Container>
             <ContainerWrapper>
-                <Intro>{INTRODUCTION.INTRO}</Intro>
-                <Paragraph>{INTRODUCTION.INTERESTS}</Paragraph>
-                <Paragraph>{INTRODUCTION.INTERESTS_OTHER}</Paragraph>
-                <Paragraph>{INTRODUCTION.HOBBY}</Paragraph>
-                <Paragraph>{INTRODUCTION.PREV}</Paragraph>
+                <Intro>{INTRODUCTION}</Intro>
+                {Object.values(PARAGRAPH).map((details, idx) => (
+                    <Paragraph key={idx}>{details}</Paragraph>
+                ))}
             </ContainerWrapper>
         </Container>
     );

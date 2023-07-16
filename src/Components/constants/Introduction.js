@@ -1,8 +1,10 @@
-export const INTRODUCTION = {
-    INTRO: `
-        Hi! I'm Wooseok.
-        I'm a Software Engineer based in the United States.
-        I'm currently located in the Bay Area, California.`,
+export const INTRODUCTION = `
+    Hi! I'm Wooseok.
+    I'm a Software Engineer based in the United States.
+    I'm currently located in the Bay Area, California.
+`;
+
+export const PARAGRAPH = {
     INTERESTS: `
         I'm interested in all aspects of software development.
         Recently, my passion lies in the web application development including both the front end and the back end.`,
